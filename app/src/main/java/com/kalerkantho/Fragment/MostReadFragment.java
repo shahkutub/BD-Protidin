@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -25,7 +25,7 @@ import com.kalerkantho.Adapter.MostReadRecyAdapter;
 import com.kalerkantho.Model.CommonNewsItem;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.AppConstant;
-import com.kalerkantho.Utils.GridSpacingItemDecoration;
+import com.kalerkantho.Utils.DividerItemDecoration;
 import com.kalerkantho.Utils.NetInfo;
 import com.kalerkantho.holder.AllCommonNewsItem;
 import com.kalerkantho.holder.AllNewsObj;
@@ -43,6 +43,7 @@ public class MostReadFragment extends Fragment {
    private Drawable dividerDrawable;
    private MostReadRecyAdapter mAdapter;
    private ProgressBar mostReadBg;
+
 
     @Nullable
     @Override
@@ -74,12 +75,17 @@ public class MostReadFragment extends Fragment {
 
                 }
 
+
+
+
                 mostReadNewRecList= (RecyclerView) getView().findViewById(R.id.mostReadNewRecList);
                 mostReadBg = (ProgressBar) getView().findViewById(R.id.mostReadBg);
-                mostReadNewRecList.setLayoutManager(new GridLayoutManager(con, 2));
-                GridSpacingItemDecoration itemDecoration = new GridSpacingItemDecoration(con, R.dimen.space);
-                mostReadNewRecList.addItemDecoration(itemDecoration);
-
+                mLayoutManager = new LinearLayoutManager(con);
+                mostReadNewRecList.setLayoutManager(mLayoutManager);
+                dividerDrawable = ContextCompat.getDrawable(con, R.drawable.divider);
+                RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(dividerDrawable);
+                mostReadNewRecList.addItemDecoration(dividerItemDecoration);
+                mostReadNewRecList.setHasFixedSize(true);
                 mAdapter = new MostReadRecyAdapter(con,mostRead,null);
                 mostReadNewRecList.setAdapter(mAdapter);
             }

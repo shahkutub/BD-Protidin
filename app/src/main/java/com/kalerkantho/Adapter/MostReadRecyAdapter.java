@@ -102,7 +102,7 @@ public class MostReadRecyAdapter extends RecyclerView.Adapter<MostReadRecyAdapte
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_latest_row, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_latest_row_n, parent, false);
         return new MyViewHolder(itemView);
     }
 

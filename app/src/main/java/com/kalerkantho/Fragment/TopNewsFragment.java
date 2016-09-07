@@ -92,8 +92,10 @@ public class TopNewsFragment extends Fragment {
 
                 topnewRecList= (RecyclerView) getView().findViewById(R.id.topnewRecList);
                 topNewsBg = (ProgressBar) getView().findViewById(R.id.topNewsBg);
+
                 mLayoutManager = new LinearLayoutManager(con);
                 topnewRecList.setLayoutManager(mLayoutManager);
+
                 dividerDrawable = ContextCompat.getDrawable(con, R.drawable.divider);
                 RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(dividerDrawable);
                 topnewRecList.addItemDecoration(dividerItemDecoration);
