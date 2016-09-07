@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refreshItem"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@color/gray"
+        app:showAsAction="never"
+        android:title="রিফ্রেশ সাইট"></item>
+    <item
+        android:id="@+id/settinItem"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@color/gray"
+        app:showAsAction="never"
+        android:title="সেটিং"></item>
+    <item
+        android:id="@+id/helpItem"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@color/gray"
+        app:showAsAction="never"
+        android:title="হেল্প"></item>
+    <item
+        android:id="@+id/feedBackItem"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@color/gray"
+        app:showAsAction="never"
+        android:title="ফীডব্যাক পাঠাও"></item>
+
+</menu>

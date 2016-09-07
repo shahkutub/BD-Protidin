@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+<TextView
+    android:id="@+id/homeMenu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:paddingTop="8dp"
+    android:paddingLeft="30dp"
+    android:paddingBottom="8dp"
+    android:text="হোম"
+    android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        ></View>
+
+    <TextView
+        android:id="@+id/shirshoMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="8dp"
+        android:text="শীর্ষ সংবাদ"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        ></View>
+
+
+    <TextView
+        android:id="@+id/shorboMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="8dp"
+        android:text="সর্বশেষ সংবাদ"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        ></View>
+
+    <TextView
+        android:id="@+id/shorbaMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="8dp"
+        android:text="সর্বাধিক পঠিত"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#808080"
+        />
+
+<RelativeLayout
+    android:id="@+id/printBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    >
+    <TextView
+        android:id="@+id/printVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingLeft="30dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="প্রিন্ট ভার্সন"
+        android:textSize="18sp"/>
+    <ImageView
+        android:id="@+id/showPrintListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:src="@drawable/back_gone"/>
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#808080"
+        ></View>
+
+</LinearLayout>

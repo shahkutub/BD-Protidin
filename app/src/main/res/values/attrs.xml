@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <declare-styleable name="ParallaxListView">
+        <attr name="enableZoom" format="boolean"/> &lt;!&ndash;default=false&ndash;&gt;
+        <attr name="zoomFactor" format="float"/> &lt;!&ndash;default=1.0&ndash;&gt;
+        <attr name="scrollMultiplier" format="float"/> &lt;!&ndash;default=0.5&ndash;&gt;
+    </declare-styleable>-->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabSwitch" format="boolean" />
+
+        <attr name="pstsActivateTextColor" format="color" />
+        <attr name="pstsDeactivateTextColor" format="color" />
+
+    </declare-styleable>
+    <!--
+     <declare-styleable name="CropImageView">
+        <attr name="guidelines">
+            <enum name="on" value="2"/>
+            <enum name="onTouch" value="1"/>
+            <enum name="off" value="0"/>
+        </attr>
+        <attr name="fixAspectRatio" format="boolean"/>
+        <attr name="aspectRatioX" format="integer"/>
+        <attr name="aspectRatioY" format="integer"/>
+        <attr name="imageResource" format="reference"/>
+        <attr name="scaleType">
+            <enum name="centerInside" value="0"/>
+            <enum name="fitCenter" value="1"/>
+        </attr>
+        <attr name="cropShape">
+            <enum name="rectangle" value="0"/>
+            <enum name="oval" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StickyListHeadersListView">
+        <attr name="stickyListHeadersListViewStyle" format="reference"/>
+
+        &lt;!&ndash; View attributes &ndash;&gt;
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        &lt;!&ndash; ListView attributes &ndash;&gt;
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+        <attr name="android:stackFromBottom" />
+
+        &lt;!&ndash; StickyListHeaders attributes &ndash;&gt;
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollableLayout">
+        <attr name="scrollable_maxScroll"          format="dimension" />
+        <attr name="scrollable_scrollerFlywheel"   format="boolean" />
+        <attr name="scrollable_considerIdleMillis" format="integer" />
+        <attr name="scrollable_defaultCloseUp"     format="boolean" />
+        <attr name="scrollable_friction"           format="float" />
+
+        <attr name="scrollable_closeUpAnimationMillis" format="integer" />
+        <attr name="scrollable_closeUpAnimatorInterpolator" format="reference" />
+
+        <attr name="scrollable_autoMaxScroll"       format="boolean" />
+        <attr name="scrollable_autoMaxScrollViewId" format="reference" />
+    </declare-styleable>
+
+
+
+
+    &lt;!&ndash; CircularImageView for custom shape &ndash;&gt;
+    <declare-styleable name="CircularImageView">
+
+        &lt;!&ndash; Specifies whether or not to draw a circular border around the image. &ndash;&gt;
+        <attr name="border" format="boolean"></attr>
+        &lt;!&ndash; Specifies the color of the border draw around the image. (if enabled) &ndash;&gt;
+        <attr name="border_color" format="color"></attr>
+        &lt;!&ndash; Makes the border this pixels wide. (if enabled) &ndash;&gt;
+        <attr name="border_width" format="dimension"></attr>
+        &lt;!&ndash; Specifies whether or not to draw a selector on this view upon touch events. &ndash;&gt;
+        <attr name="selector" format="boolean"></attr>
+        &lt;!&ndash; Specifies the color of the selector draw on top of the image upon touch events. (if enabled) &ndash;&gt;
+        <attr name="selector_color" format="color"></attr>
+        &lt;!&ndash; Specifies the color of the selector stroke drawn around the image upon touch events. Be sure to provide some opacity. (if enabled) &ndash;&gt;
+        <attr name="selector_stroke_color" format="color"></attr>
+        &lt;!&ndash; Makes the selector stroke drawn around the image upon touch events this pixels wide. (if enabled) &ndash;&gt;
+        <attr name="selector_stroke_width" format="dimension"></attr>
+        &lt;!&ndash; Specifies whether or not to draw a shadow around your circular image. &ndash;&gt;
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomCircularImageViewTheme">
+        <attr name="circularImageViewStyle" format="reference" />
+    </declare-styleable>-->
+    
+</resources>

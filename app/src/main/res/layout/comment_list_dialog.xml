@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/topViewNewList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/homTop"
+        android:padding="@dimen/dim10"
+        >
+        <ImageView
+            android:id="@+id/imgCrossComment"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim10"
+            android:src="@drawable/cross_white" />
+
+        <TextView
+            android:id="@+id/tvCommentc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim10"
+            android:layout_toRightOf="@+id/imgCrossComment"
+            android:text="@string/comment"
+            android:textSize="18sp"
+            android:textColor="@color/whiteMy" />
+        <TextView
+            android:id="@+id/tvCommentPlz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/descripasasss_03"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/comment_please"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:textColor="@color/homTop"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCommentList"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/topViewNewList"/>
+
+    <ProgressBar
+        android:id="@+id/progressCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/etWriteComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C5C5C5"
+            android:hint="আপনার মন্তব্য..."
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/dim10"
+            android:paddingTop="@dimen/dim10"
+            android:paddingLeft="@dimen/dim20"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/comment_please"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:padding="@dimen/dim10"
+            android:background="#007438"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

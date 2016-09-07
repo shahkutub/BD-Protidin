@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/commonView"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+       >
+
+       <LinearLayout
+           android:id="@+id/mainHolder"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="@color/gray">
+    <ImageView
+        android:id="@+id/imag_comm"
+        android:layout_width="@dimen/default_imagew"
+        android:layout_height="@dimen/default_imageh"
+        android:layout_margin="1px"
+        android:gravity="center"
+        android:src="@drawable/defaulticon"
+        android:scaleType="fitXY"
+        />
+
+       </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_imageh"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@+id/mainHolder"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/commonTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/comDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="#9E9E9E"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:text="time here"
+                android:visibility="gone" />
+            <View
+                android:id="@+id/divderView"
+                android:layout_width="5px"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="8dp"
+                android:background="#888888"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/common_cat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#00A750"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

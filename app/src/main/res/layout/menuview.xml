@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+   >
+
+    <TextView
+        android:id="@+id/refreshBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        android:textColor="#A9A9A9"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:textSize="15sp"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:background="@color/gray"
+        android:layout_alignLeft="@+id/refreshBtn"
+        android:layout_alignRight="@+id/refreshBtn"
+        android:layout_below="@+id/refreshBtn"
+        ></View>
+
+    <TextView
+
+        android:id="@+id/settingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting"
+        android:textColor="#A9A9A9"
+        android:paddingTop="10dp"
+        android:paddingLeft="45dp"
+        android:paddingBottom="10dp"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignRight="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:textSize="15sp"/>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_below="@+id/settingBtn"
+        android:layout_alignRight="@+id/settingBtn"
+        android:layout_alignLeft="@+id/settingBtn"
+        android:background="@color/gray"
+        ></View>
+
+    <TextView
+
+        android:id="@+id/helpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helps"
+        android:textColor="#A9A9A9"
+        android:paddingTop="10dp"
+        android:paddingLeft="45dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/view2"
+        android:layout_alignLeft="@+id/view2"
+        android:layout_alignRight="@+id/view2"
+        android:textSize="15sp"/>
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_below="@+id/helpBtn"
+        android:layout_alignLeft="@+id/helpBtn"
+        android:layout_alignRight="@+id/helpBtn"
+        android:background="@color/gray"
+        ></View>
+
+    <TextView
+        android:id="@+id/feedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback"
+        android:textColor="#A9A9A9"
+        android:paddingTop="10dp"
+        android:paddingLeft="45dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/view3"
+        android:layout_alignRight="@+id/view3"
+        android:layout_alignLeft="@+id/view3"
+        android:textSize="15sp"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_below="@+id/feedBtn"
+        android:layout_alignLeft="@+id/feedBtn"
+        android:layout_alignRight="@+id/feedBtn"
+        android:background="@color/gray"
+        ></View>
+
+</RelativeLayout>

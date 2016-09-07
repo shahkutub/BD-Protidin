@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/fullview"
+    android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:elevation="1dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_commonnews"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fullscreen_image_height"
+        android:src="@drawable/fullscreen"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tvTitleComonnews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="LEad News Here"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvDatetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#9E9E9E"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:text="time here"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="5px"
+            android:layout_height="12dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:background="#888888"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/cat_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#00A750"
+            android:padding="3dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+   </android.support.v7.widget.CardView>
+
+</LinearLayout>

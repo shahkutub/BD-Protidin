@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/horixontalView"
+    android:orientation="vertical"
+   >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:elevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      >
+
+    <ImageView
+        android:id="@+id/others_news_icon"
+        android:layout_width="@dimen/fullscreen_image_height"
+        android:layout_height="@dimen/default_imagew"
+        android:src="@drawable/defaulticon"
+        android:scaleType="fitXY"
+        android:padding="5dp" />
+
+    <TextView
+
+        android:id="@+id/otersnews_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/others_news_icon"
+        android:layout_alignLeft="@+id/others_news_icon"
+        android:layout_alignRight="@+id/others_news_icon"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text=""
+        android:textColor="@android:color/black" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

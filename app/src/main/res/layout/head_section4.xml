@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        ></View>
+
+    <TextView
+        android:id="@+id/favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="8dp"
+        android:text="ফেবোরাইট"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        ></View>
+
+    <TextView
+        android:id="@+id/photogalery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="8dp"
+        android:text="ফটো গ্যালারি"
+        android:textSize="18sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        ></View>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="8dp"
+        android:text="সেটিং"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#808080"
+        ></View>
+
+    <TextView
+        android:id="@+id/motamot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:paddingTop="8dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="8dp"
+        android:text="মতামত"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/topViewHelp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/homTop"
+        android:padding="5dp"
+      >
+        <ImageView
+            android:id="@+id/dissmissHelpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dim10"
+            android:src="@drawable/cross_white" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dissmissHelpBtn"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20sp"
+            android:textColor="@color/whiteMy" />
+    </RelativeLayout>
+
+
+    <WebView
+        android:id="@+id/helpWeb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topViewHelp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

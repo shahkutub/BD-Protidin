@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- large -->
+     <dimen name="fullscreen_image_height">220dp</dimen>
+    <dimen name="default_imageh">150dp</dimen>
+    <dimen name="default_imagew">190dp</dimen>
+    <dimen name="space">8dp</dimen>
+    <dimen name="spacepad">2dp</dimen>
+
+
+    <dimen name="grid_imageh">150dp</dimen>
+    <dimen name="grid_imagew">200dp</dimen>
+    <dimen name="toggleh">40dp</dimen>
+    <dimen name="dim07">9dp</dimen>
+    <dimen name="dim10">15dp</dimen>
+    <dimen name="dim20">25dp</dimen>
+    <dimen name="dim15">20dp</dimen>
+    <dimen name="dim30">45dp</dimen>
+    <dimen name="dim40">60dp</dimen>
+    <dimen name="dim70">95dp</dimen>
+    <dimen name="photoh">130dp</dimen>
+    <dimen name="photow">160dp</dimen>
+</resources>

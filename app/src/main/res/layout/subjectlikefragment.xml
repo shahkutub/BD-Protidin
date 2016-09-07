@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/listChooseBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/listChooseText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/likesubject"
+               android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/listChooseView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/kalerkontho_actionbar"
+                android:visibility="gone"></View>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/selectSubjectBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/selectSubjectText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/subjectselect"
+                android:textColor="@color/kalerkontho_actionbar"
+                android:textSize="18sp" />
+
+            <View
+                android:id="@+id/selectSubjectView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/kalerkontho_actionbar"
+                android:visibility="visible"></View>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/onlineAllMenuList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menuBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myFvList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menuBar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:visibility="gone" />
+
+</RelativeLayout>

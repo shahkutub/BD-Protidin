@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <!-- <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item_home"
+            android:checked="false"
+            android:title="হোম" />
+
+        <item
+            android:id="@+id/nav_item_latest"
+            android:checked="false"
+            android:title="শীর্ষ সংবাদ" />
+
+        <item
+            android:id="@+id/nav_item_last"
+            android:checked="false"
+            android:title="সর্বশেষ সংবাদ" />
+
+        <item
+            android:id="@+id/nav_item_most"
+            android:checked="false"
+            android:title="সর্বাধিক দর্শ" />
+        <item
+            android:id="@+id/nav_item_self"
+            android:checked="false"
+            android:title="নিজ সংবাদ" />
+
+        <item
+            android:id="@+id/nav_item_print"
+            android:checked="false"
+            android:title="প্রিন্ট ভার্সন" />
+
+        <item
+            android:id="@+id/nav_item_final"
+            android:checked="false"
+            android:title="প্রিন্ট ভার্সন" />
+
+    </group>
+
+
+
+
+&lt;!&ndash;    <group
+        android:id="@+id/group2"
+        android:visible="true">
+        <item
+            android:title="Sub item 1" />
+        <item android:title="Sub item 2" />
+        <item android:title="Sub item 3" />
+        <item android:title="Sub item 4" />
+        <item android:title="Sub item 5" />
+        <item android:title="Sub item 6" />
+        <item android:title="Sub item 7" />
+        <item android:title="Sub item 8" />
+        <item android:title="Sub item 9" />
+        <item android:title="Sub item 10" />
+    </group>&ndash;&gt;
+
+
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/nav_item_select"
+            android:checked="false"
+            android:title="নির্বাচিত ক্যাটাগরি" />
+    </group>-->
+
+
+</menu>
