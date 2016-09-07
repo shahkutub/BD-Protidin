@@ -21,14 +21,14 @@
         android:layout_alignBottom="@+id/imgFvrt"
         android:layout_alignTop="@+id/imgFvrt"
         android:gravity="center_vertical"
-        android:layout_marginLeft="@dimen/dim10"
+        android:layout_marginLeft="5dp"
         >
 
     <TextView
         android:id="@+id/fvrtTxtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Heading"
+        android:text=""
         android:gravity="center_vertical"
         android:maxLines="1"
         android:lines="1"
@@ -47,11 +47,10 @@
                 android:id="@+id/dateFvrt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/fvrtCategory"
                 android:layout_marginLeft="5sp"
                 android:textColor="#bfc9ca"
-                android:text="Date"
-                android:textSize="10sp" />
+                android:text=""
+                android:textSize="12sp" />
 
 
             <View
@@ -65,10 +64,10 @@
                 android:id="@+id/fvrtCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jatio"
+                android:text=""
                 android:gravity="center_vertical"
                 android:textColor="#0089CF"
-                android:textSize="16sp" />
+                android:textSize="14sp" />
 
         </LinearLayout>
 
@@ -77,13 +76,14 @@
     </RelativeLayout>
     <ImageView
         android:id="@+id/fvrtBtn"
-        android:layout_width="@dimen/dim20"
-        android:layout_height="@dimen/dim20"
+        android:layout_width="@dimen/dim30"
+        android:layout_height="@dimen/dim30"
         android:layout_alignParentRight="true"
+        android:padding="5dp"
         android:layout_alignParentTop="true"
         android:layout_marginRight="@dimen/dim07"
         android:layout_marginTop="@dimen/dim07"
-        android:src="@drawable/fav_off"
+
         />
 
 </RelativeLayout>

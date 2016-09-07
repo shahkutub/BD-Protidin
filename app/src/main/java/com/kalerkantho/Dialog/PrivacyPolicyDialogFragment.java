@@ -66,7 +66,7 @@ public class PrivacyPolicyDialogFragment extends DialogFragment {
         });
 
 
-        getWebView(AllURL.getHelp());
+        getWebView(AllURL.getPolicy());
     }
 
     public void getWebView(String url) {

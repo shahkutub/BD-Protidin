@@ -65,7 +65,7 @@ public class ConditionDialogFragment extends DialogFragment {
         });
 
 
-        getWebView(AllURL.getHelp());
+        getWebView(AllURL.getCondition());
     }
 
     public void getWebView(String url) {
