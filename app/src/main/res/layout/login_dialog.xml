@@ -135,7 +135,7 @@
         android:layout_marginTop="@dimen/dim20"
         android:gravity="center"
         android:textColor="@color/homTop"
-        android:visibility="gone"
+        android:visibility="visible"
         />
 
 </LinearLayout>

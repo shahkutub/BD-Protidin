@@ -65,7 +65,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dim20"
-                        android:text="ghgjhkjkjkkjn"
+                        android:text=""
                         android:paddingTop="3dp"
                         android:textColor="@color/white"
                         android:paddingBottom="3dp"
@@ -282,7 +282,7 @@
                     android:id="@+id/detailsText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sdf"
+                    android:text=""
                     android:textColor="@color/black"
                     android:layout_marginTop="@dimen/dim10"
                     />
