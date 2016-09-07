@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.util.Log;
@@ -24,7 +25,7 @@ import com.kalerkantho.Adapter.LatestRecyAdapter;
 import com.kalerkantho.Model.CommonNewsItem;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.AppConstant;
-import com.kalerkantho.Utils.GridSpacingItemDecoration;
+import com.kalerkantho.Utils.DividerItemDecoration;
 import com.kalerkantho.Utils.NetInfo;
 import com.kalerkantho.holder.AllCommonNewsItem;
 import com.kalerkantho.holder.AllNewsObj;
@@ -41,6 +42,7 @@ public class LatestNewsFragment extends Fragment {
    private Drawable dividerDrawable;
    private LatestRecyAdapter lAdapter;
    private ProgressBar latestNewBg;
+  private LinearLayoutManager mLayoutManager;
 
     @Nullable
     @Override
@@ -79,9 +81,20 @@ public class LatestNewsFragment extends Fragment {
                 latestNewRecList= (RecyclerView) getView().findViewById(R.id.latestNewRecList);
 
                 latestNewBg = (ProgressBar) getView().findViewById(R.id.latestNewBg);
-                latestNewRecList.setLayoutManager(new GridLayoutManager(con, 2));
+
+
+              /*  latestNewRecList.setLayoutManager(new GridLayoutManager(con, 2));
                 GridSpacingItemDecoration itemDecoration = new GridSpacingItemDecoration(con, R.dimen.space);
-                latestNewRecList.addItemDecoration(itemDecoration);
+                latestNewRecList.addItemDecoration(itemDecoration);*/
+
+                mLayoutManager = new LinearLayoutManager(con);
+                latestNewRecList.setLayoutManager(mLayoutManager);
+                dividerDrawable = ContextCompat.getDrawable(con, R.drawable.divider);
+                RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(dividerDrawable);
+                latestNewRecList.addItemDecoration(dividerItemDecoration);
+                latestNewRecList.setHasFixedSize(true);
+
+
 
                 lAdapter = new LatestRecyAdapter(con,latestNews,null);
                 latestNewRecList.setAdapter(lAdapter);
