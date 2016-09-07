@@ -19,7 +19,7 @@
         android:paddingTop="8dp"
         android:paddingLeft="30dp"
         android:paddingBottom="8dp"
-        android:text="ফেবোরাইট"
+        android:text="@string/favorite"
         android:textSize="18sp"/>
     <View
         android:layout_width="match_parent"

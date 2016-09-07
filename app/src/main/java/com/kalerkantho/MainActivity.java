@@ -40,6 +40,7 @@ import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.gson.Gson;
 import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
 import com.kalerkantho.Adapter.Menu2RecyAdapter;
 import com.kalerkantho.Adapter.Menu3RecyAdapter;
 import com.kalerkantho.Adapter.MenuRecyAdapter;
@@ -235,8 +236,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         Gson g = new Gson();
-        allCategory = g.fromJson(PersistData.getStringData(getApplicationContext(), AppConstant.CATEGORY_RESPONSE), AllCategory.class);
 
+        try{
+            if (!(android.text.TextUtils.isEmpty(AppConstant.CATEGORY_RESPONSE))){
+
+                allCategory = g.fromJson(PersistData.getStringData(getApplicationContext(), AppConstant.CATEGORY_RESPONSE), AllCategory.class);
+            }
+
+        }catch (JsonSyntaxException e){
+
+        }
+
+
+        Log.e("cat size",""+allCategory.getCategory_list().size());
 
         homeMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -328,8 +340,11 @@ public class MainActivity extends AppCompatActivity {
                                     showPrintListView.setImageResource(R.drawable.back_show);
                                 }
 
+                                Log.e("size",""+printList.size());
+
                                 mAdapter = new MenuRecyAdapter(MainActivity.this, printList, null);
                                 listViewMenu.setAdapter(mAdapter);
+
                                 RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(dividerDrawable);
                                 listViewMenu.addItemDecoration(dividerItemDecoration);
 
@@ -840,18 +855,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] errorResponse, Throwable e) {
-                // called when response HTTP status is "4XX" (eg. 401, 403, 404)
 
-//				Log.e("LoginerrorResponse", new String(errorResponse));
-
-//                if (busyNow != null) {
-//                    busyNow.dismis();
-//                }
             }
 
             @Override
             public void onRetry(int retryNo) {
-                // called when request is retried
+
 
             }
         });
@@ -873,62 +882,6 @@ public class MainActivity extends AppCompatActivity {
         mDrawerLayout.addDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
 
-
-        // ImageView displayMenu = (ImageView) findViewById(R.id.sideMenuBtn);
-
-//
-//
-//        displayMenu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                LayoutInflater inflater = LayoutInflater.from(con);
-//                View view = inflater.inflate(R.layout.menmain, null);
-//                ListView listView = (ListView) view.findViewById(R.id.popupList);
-//                listView.setDivider(null);
-//                Log.e("Click","this");
-//
-//                customMenuAdapter = new CustomAdapter(con,optionMenuList);
-//                listView.setAdapter(customMenuAdapter);
-//
-//                PopupWindow mPopupWindow = new PopupWindow(con, null, R.attr.popupMenuStyle);
-//                mPopupWindow.setFocusable(true); // otherwise on android 4.1.x the onItemClickListener won't work.
-//                mPopupWindow.setContentView(view);
-//                mPopupWindow.setOutsideTouchable(true);
-//
-//                int height = 0;
-//                int width = 0;
-//                float density = con.getResources().getDisplayMetrics().density;
-//                int minWidth = Math.round(196 * density); // min width 196dip, from abc_popup_menu_item_layout.xml
-//                int cellHeight = con.getResources().getDimensionPixelOffset(R.dimen.option_height);
-//                int dividerHeight = con.getResources().getDimensionPixelOffset(R.dimen.divider_height);
-//                final int widthMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
-//                final int heightMeasureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
-//                for (int i = 0; i < mAdapter.getCount(); i++) {
-//                    Object item = mAdapter.getItem(i);
-//                    if (item != null) {
-//                        View childView = mAdapter.getView(i, null, listView);
-//                        childView.measure(widthMeasureSpec, heightMeasureSpec);
-//                        height += cellHeight;
-//                        width = Math.max(width, childView.getMeasuredWidth());
-//                    } else {
-//                        height += dividerHeight; // divider
-//                    }
-//                }
-//                width = Math.max(minWidth, width);
-//                Drawable background = mPopupWindow.getBackground(); // 9-pitch images
-//                if (background != null) {
-//                    Rect padding = new Rect();
-//                    background.getPadding(padding);
-//                    height += padding.top + padding.bottom;
-//                    width += padding.left + padding.right;
-//                }
-//                mPopupWindow.setWidth(width);
-//                mPopupWindow.setHeight(height);
-//                mPopupWindow.setInputMethodMode(PopupWindow.INPUT_METHOD_NOT_NEEDED);
-//
-//
-//            }
-//        });
 
 
     }
@@ -1162,7 +1115,7 @@ public class MainActivity extends AppCompatActivity {
                 // Otherwise, set the URL to null.
                 Uri.parse("http://host/path"),
                 // TODO: Make sure this auto-generated app URL is correct.
-                Uri.parse("android-app://com.kalerkantho/http/host/path")
+                Uri.parse("android-app://com.bangladesh_pratidin/http/host/path")
         );
         AppIndex.AppIndexApi.end(client2, viewAction);
         client2.disconnect();

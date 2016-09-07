@@ -122,30 +122,6 @@ public class Splash extends Activity {
         }
     }
 
-//    class RegisterBackground extends AsyncTask<String, String, String> {
-//        @Override
-//        protected String doInBackground(String... arg0) {
-//
-//            try {
-//                if (gcm == null) {
-//                    gcm = GoogleCloudMessaging.getInstance(con);
-//                }
-//                regId = gcm.register(SENDER_ID);
-//                PersistData.setStringData(con, AppConstant.GCMID, regId);
-//                msg = "Dvice registered, registration ID=" + regId;
-//                Log.e("Google Registration ID", "---------" + msg);
-//
-//            } catch (final IOException ex) {
-//                msg = "Error :" + ex.getMessage();
-//            }
-//            return msg;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(String msg) {
-//
-//        }
-//    }
 
     private boolean checkPlayServices() {
         final int resultCode = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getApplicationContext());
@@ -182,7 +158,7 @@ public class Splash extends Activity {
 
         }
 
-     //  progressShow.setVisibility(View.VISIBLE);
+
         Executors.newSingleThreadScheduledExecutor().submit(new Runnable() {
 
 
@@ -200,10 +176,9 @@ public class Splash extends Activity {
                     @Override
                     public void run() {
 
-                       // progressShow.setVisibility(View.GONE);
 
                         try {
-                            Log.e("Response", ">>" + new String(response_menu));
+                            Log.e("menulist", ">>" + new String(response_menu));
                             if (!TextUtils.isEmpty(new String(response_menu))) {
 
                                 Gson g = new Gson();
@@ -221,7 +196,7 @@ public class Splash extends Activity {
 
                         } catch (final Exception e) {
                             e.printStackTrace();
-                            //progressShow.setVisibility(View.GONE);
+
                         }
                     }
                 });
@@ -231,7 +206,6 @@ public class Splash extends Activity {
 
     }
 
-    // This is the handler that will manager to process the broadcast intent
     private final BroadcastReceiver mMessageReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {

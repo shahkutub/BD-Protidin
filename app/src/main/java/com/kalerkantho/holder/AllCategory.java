@@ -12,7 +12,7 @@ public class AllCategory {
     private int code;
     private int status;
     private String msg;
-    private List<Category> category_list = new ArrayList<Category>();
+    private List<Category> menu_list = new ArrayList<Category>();
 
     public int getCode() {
         return code;
@@ -39,10 +39,10 @@ public class AllCategory {
     }
 
     public List<Category> getCategory_list() {
-        return category_list;
+        return menu_list;
     }
 
-    public void setCategory_list(List<Category> category_list) {
-        this.category_list = category_list;
+    public void setCategory_list(List<Category> menu_list) {
+        this.menu_list = menu_list;
     }
 }

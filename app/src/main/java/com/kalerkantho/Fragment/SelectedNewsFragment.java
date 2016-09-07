@@ -68,7 +68,7 @@ public class SelectedNewsFragment extends Fragment {
 
                 selectedNews.clear();
 
-                for(CommonNewsItem topNews:allObj.getSelected_news())
+                for(CommonNewsItem topNews:allObj.getHighlights())
                 {
                     AllCommonNewsItem singleObj=new AllCommonNewsItem();
                     singleObj.setType("fullscreen");
@@ -161,7 +161,7 @@ public class SelectedNewsFragment extends Fragment {
                                 AppConstant.REFRESHFLAG = false;
                                 selectedNews.clear();
 
-                                for(CommonNewsItem topNews:allObj.getSelected_news())
+                                for(CommonNewsItem topNews:allObj.getHighlights())
                                 {
                                     AllCommonNewsItem singleObj=new AllCommonNewsItem();
                                     singleObj.setType("fullscreen");

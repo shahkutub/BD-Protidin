@@ -20,7 +20,8 @@ public class AllNewsObj {
     private List<CommonNewsItem> photo_gallery = new ArrayList<CommonNewsItem>();
     private List<CommonNewsItem> latest_news = new ArrayList<CommonNewsItem>();
     private List<CommonNewsItem> most_read = new ArrayList<CommonNewsItem>();
-    private List<CommonNewsItem> selected_news = new ArrayList<CommonNewsItem>();
+    private List<CommonNewsItem> highlights = new ArrayList<CommonNewsItem>();
+
 
     public int getCode() {
         return code;
@@ -102,11 +103,11 @@ public class AllNewsObj {
         this.most_read = most_read;
     }
 
-    public List<CommonNewsItem> getSelected_news() {
-        return selected_news;
+    public List<CommonNewsItem> getHighlights() {
+        return highlights;
     }
 
-    public void setSelected_news(List<CommonNewsItem> selected_news) {
-        this.selected_news = selected_news;
+    public void setHighlights(List<CommonNewsItem> highlights) {
+        this.highlights = highlights;
     }
 }

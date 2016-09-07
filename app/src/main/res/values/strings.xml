@@ -92,6 +92,13 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="details">বিস্তারিত</string>ফেবোরাইট
-    <string name="favorite">ফেবোরাইট</string>
+    <string name="details">বিস্তারিত</string>
+    <string name="favorite">ফেভারিট</string>
+
+
+
+
+    <string name="ajkrprotika">আজকের পত্রিকা</string>
+
+
 </resources>

@@ -48,7 +48,7 @@
         android:paddingTop="8dp"
         android:paddingLeft="30dp"
         android:paddingBottom="8dp"
-        android:text="সর্বশেষ সংবাদ"
+        android:text="সর্বশেষ খবর"
         android:textSize="18sp"/>
     <View
         android:layout_width="match_parent"
@@ -78,6 +78,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginRight="10dp"
+
     >
     <TextView
         android:id="@+id/printVersion"
@@ -87,7 +88,7 @@
         android:paddingLeft="30dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="প্রিন্ট ভার্সন"
+        android:text="@string/ajkrprotika"
         android:textSize="18sp"/>
     <ImageView
         android:id="@+id/showPrintListView"
