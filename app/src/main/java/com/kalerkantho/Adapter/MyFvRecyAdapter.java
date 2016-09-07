@@ -1,4 +1,5 @@
 package com.kalerkantho.Adapter;
+
 import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
@@ -7,17 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Model.Category;
 import com.kalerkantho.Model.OnItemClickListener;
 import com.kalerkantho.MyDb.MyDBHandler;
-import com.kalerkantho.R;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MyFvRecyAdapter extends RecyclerView.Adapter<MyFvRecyAdapter.MyViewHolder> {
     Context context;

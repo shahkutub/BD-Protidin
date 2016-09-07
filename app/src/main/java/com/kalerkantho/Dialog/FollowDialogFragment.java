@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.kalerkantho.R;
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Utils.AppConstant;
 
 public class FollowDialogFragment extends DialogFragment {

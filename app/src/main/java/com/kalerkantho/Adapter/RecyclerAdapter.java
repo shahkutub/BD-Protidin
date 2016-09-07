@@ -15,10 +15,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bangladesh_pratidin.R;
 import com.bumptech.glide.Glide;
 import com.kalerkantho.DetailsActivity;
 import com.kalerkantho.Dialog.CatListDialogFragment;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AppConstant;
 import com.kalerkantho.holder.AllCommonNewsItem;
 

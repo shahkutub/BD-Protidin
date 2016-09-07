@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.kalerkantho.R;
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Utils.AllURL;
 
 public class ConditionDialogFragment extends DialogFragment {

@@ -11,36 +11,29 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.ToggleButton;
 
 import com.aapbd.utils.network.AAPBDHttpClient;
 import com.aapbd.utils.storage.PersistData;
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.kalerkantho.Dialog.ConditionDialogFragment;
 import com.kalerkantho.Dialog.HelpDialogFragment;
 import com.kalerkantho.Dialog.PrivacyPolicyDialogFragment;
-import com.kalerkantho.Model.LoginResponse;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AlertMessage;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.AppConstant;
-import com.kalerkantho.Utils.BusyDialog;
 import com.kalerkantho.Utils.NetInfo;
 import com.kalerkantho.Utils.PersistentUser;
 import com.kalerkantho.holder.AllCommonResponse;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
-import com.loopj.android.http.RequestParams;
 
-;import java.util.concurrent.Executors;
+import java.util.concurrent.Executors;
 
-import cz.msebera.android.httpclient.Header;
 
 
 public class SettingFragment extends Fragment {
@@ -50,7 +43,7 @@ public class SettingFragment extends Fragment {
     private LinearLayout hepBtn, privacyPolicyBtn, conditionBtn;
     private RelativeLayout ViewShowTop;
     private ImageView imgBackSetting;
-    private ToggleButton notificationTg, soundTg, vivrateTg;
+    private CheckBox notificationTg, soundTg, vivrateTg;
     private AllCommonResponse allCommonResponse;
 
 
@@ -87,9 +80,9 @@ public class SettingFragment extends Fragment {
         ViewShowTop = (RelativeLayout) getView().findViewById(R.id.ViewShowTop);
         imgBackSetting = (ImageView) getView().findViewById(R.id.imgBackSetting);
 
-        notificationTg = (ToggleButton) getView().findViewById(R.id.notificationTg);
-        soundTg = (ToggleButton) getView().findViewById(R.id.soundTg);
-        vivrateTg = (ToggleButton) getView().findViewById(R.id.vivrateTg);
+        notificationTg = (CheckBox) getView().findViewById(R.id.notificationCheckBox);
+        soundTg = (CheckBox) getView().findViewById(R.id.soundCheckBox);
+        vivrateTg = (CheckBox) getView().findViewById(R.id.vibrationCheckBox);
 
 
         hepBtn = (LinearLayout) getView().findViewById(R.id.hepBtn);

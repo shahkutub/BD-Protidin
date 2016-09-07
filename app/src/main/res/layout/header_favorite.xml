@@ -4,23 +4,33 @@
     android:layout_height="wrap_content"
     android:background="@color/homTop">
 
+<LinearLayout
+    android:id="@+id/backFavBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dim15"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/backBtn"
-        android:padding="5dp"
-        android:layout_margin="15dp"
         android:layout_centerVertical="true"
         android:background="@drawable/back_white"/>
+
+</LinearLayout>
+
+
     <TextView
+        android:id="@+id/favHeadText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:text="@string/favorite"
         android:layout_centerVertical="true"
         android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@+id/backBtn"/>
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/backFavBtn"/>
 
     <ImageView
         android:visibility="invisible"

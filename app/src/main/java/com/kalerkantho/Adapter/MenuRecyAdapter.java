@@ -1,7 +1,7 @@
 package com.kalerkantho.Adapter;
+
 import android.app.Activity;
 import android.app.DialogFragment;
-import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -11,12 +11,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Dialog.CatListDialogFragment;
 import com.kalerkantho.Model.Category;
 import com.kalerkantho.Model.OnItemClickListener;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AppConstant;
 
 import java.util.ArrayList;

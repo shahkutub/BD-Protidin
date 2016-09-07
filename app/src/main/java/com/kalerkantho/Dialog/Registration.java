@@ -11,19 +11,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-
 import android.widget.EditText;
-
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import com.aapbd.utils.storage.PersistData;
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.kalerkantho.Model.LoginResponse;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AlertMessage;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.AppConstant;
@@ -34,10 +30,6 @@ import com.kalerkantho.Utils.ValidateEmail;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-import com.squareup.picasso.Picasso;
-
-import java.io.File;
-import java.util.concurrent.Executors;
 
 import cz.msebera.android.httpclient.Header;
 

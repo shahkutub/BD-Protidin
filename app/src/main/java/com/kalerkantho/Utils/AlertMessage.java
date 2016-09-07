@@ -4,7 +4,7 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 
-import com.kalerkantho.R;
+import com.bangladesh_pratidin.R;
 
 
 public class AlertMessage {

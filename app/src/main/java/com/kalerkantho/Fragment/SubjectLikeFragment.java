@@ -18,13 +18,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.aapbd.utils.storage.PersistData;
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.kalerkantho.Adapter.AllOnlineRecyAdapter;
 import com.kalerkantho.Adapter.MyFvRecyAdapter;
 import com.kalerkantho.Model.Category;
 import com.kalerkantho.MyDb.MyDBHandler;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AppConstant;
 import com.kalerkantho.Utils.DividerItemDecoration;
 import com.kalerkantho.holder.AllCategory;

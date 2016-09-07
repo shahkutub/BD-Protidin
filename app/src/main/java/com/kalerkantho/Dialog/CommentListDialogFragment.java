@@ -20,11 +20,11 @@ import android.widget.TextView;
 
 import com.aapbd.utils.network.AAPBDHttpClient;
 import com.aapbd.utils.storage.PersistentUser;
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.kalerkantho.Adapter.CommentListAdapter;
 import com.kalerkantho.Model.CommentInfo;
 import com.kalerkantho.Model.CommentListResponse;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AlertMessage;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.AppConstant;

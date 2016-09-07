@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="#F5F5F5"
    >
 
-    <TextView
+<!--    <TextView
         android:id="@+id/refreshBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -15,7 +15,7 @@
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:paddingBottom="10dp"
-        android:layout_alignParentRight="true"
+
         android:textSize="15sp"/>
     <View
         android:id="@+id/view1"
@@ -25,29 +25,30 @@
         android:layout_alignLeft="@+id/refreshBtn"
         android:layout_alignRight="@+id/refreshBtn"
         android:layout_below="@+id/refreshBtn"
-        ></View>
+        ></View>-->
 
     <TextView
 
-        android:id="@+id/settingBtn"
+        android:id="@+id/settin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/setting"
         android:textColor="#A9A9A9"
         android:paddingTop="10dp"
-        android:paddingLeft="45dp"
+        android:paddingLeft="@dimen/dim70"
+        android:paddingRight="@dimen/dim70"
+        android:singleLine="true"
+        android:maxLines="1"
         android:paddingBottom="10dp"
-        android:layout_alignLeft="@+id/view1"
-        android:layout_alignRight="@+id/view1"
-        android:layout_below="@+id/view1"
-        android:textSize="15sp"/>
+        android:textStyle="bold"
+        android:textSize="14sp"/>
     <View
         android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="1px"
-        android:layout_below="@+id/settingBtn"
-        android:layout_alignRight="@+id/settingBtn"
-        android:layout_alignLeft="@+id/settingBtn"
+        android:layout_below="@+id/settin"
+        android:layout_alignRight="@+id/settin"
+        android:layout_alignLeft="@+id/settin"
         android:background="@color/gray"
         ></View>
 
@@ -59,12 +60,15 @@
         android:text="@string/helps"
         android:textColor="#A9A9A9"
         android:paddingTop="10dp"
-        android:paddingLeft="45dp"
+        android:paddingLeft="@dimen/dim70"
         android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textStyle="bold"
         android:layout_below="@+id/view2"
         android:layout_alignLeft="@+id/view2"
         android:layout_alignRight="@+id/view2"
-        android:textSize="15sp"/>
+        android:textSize="14sp"/>
     <View
         android:id="@+id/view3"
         android:layout_width="wrap_content"
@@ -82,12 +86,15 @@
         android:text="@string/feedback"
         android:textColor="#A9A9A9"
         android:paddingTop="10dp"
-        android:paddingLeft="45dp"
+        android:paddingLeft="@dimen/dim40"
         android:paddingBottom="10dp"
         android:layout_below="@+id/view3"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:textStyle="bold"
         android:layout_alignRight="@+id/view3"
         android:layout_alignLeft="@+id/view3"
-        android:textSize="15sp"/>
+        android:textSize="14sp"/>
     <View
         android:layout_width="wrap_content"
         android:layout_height="1px"

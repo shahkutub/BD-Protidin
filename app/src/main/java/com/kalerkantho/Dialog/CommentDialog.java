@@ -17,12 +17,11 @@ import android.view.Window;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.aapbd.utils.storage.PersistentUser;
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.kalerkantho.Model.LoginResponse;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AlertMessage;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.BusyDialog;

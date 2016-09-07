@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Fragment.AllnewsFragment;
 import com.kalerkantho.Fragment.LatestNewsFragment;
 import com.kalerkantho.Fragment.MostReadFragment;

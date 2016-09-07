@@ -24,12 +24,12 @@ import android.widget.TextView;
 
 import com.aapbd.utils.network.AAPBDHttpClient;
 import com.aapbd.utils.storage.PersistData;
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.kalerkantho.Adapter.MyFvRecyAdapterList;
 import com.kalerkantho.Model.Category;
 import com.kalerkantho.Model.CommonNewsItem;
 import com.kalerkantho.MyDb.MyDBHandler;
-import com.kalerkantho.R;
 import com.kalerkantho.TabFragment;
 import com.kalerkantho.Utils.AlertMessage;
 import com.kalerkantho.Utils.AllURL;

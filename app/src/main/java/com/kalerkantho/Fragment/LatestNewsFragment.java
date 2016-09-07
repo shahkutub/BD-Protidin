@@ -17,11 +17,11 @@ import android.widget.ProgressBar;
 
 import com.aapbd.utils.network.AAPBDHttpClient;
 import com.aapbd.utils.storage.PersistData;
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
 import com.kalerkantho.Adapter.LatestRecyAdapter;
 import com.kalerkantho.Model.CommonNewsItem;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.AppConstant;
 import com.kalerkantho.Utils.GridSpacingItemDecoration;
@@ -38,9 +38,9 @@ public class LatestNewsFragment extends Fragment {
    private AllNewsObj allObj;
    private List<AllCommonNewsItem> latestNews = new ArrayList<AllCommonNewsItem>();
    private RecyclerView latestNewRecList;
-   private ProgressBar latestNewBg;
    private Drawable dividerDrawable;
    private LatestRecyAdapter lAdapter;
+   private ProgressBar latestNewBg;
 
     @Nullable
     @Override
@@ -77,6 +77,7 @@ public class LatestNewsFragment extends Fragment {
 
 
                 latestNewRecList= (RecyclerView) getView().findViewById(R.id.latestNewRecList);
+
                 latestNewBg = (ProgressBar) getView().findViewById(R.id.latestNewBg);
                 latestNewRecList.setLayoutManager(new GridLayoutManager(con, 2));
                 GridSpacingItemDecoration itemDecoration = new GridSpacingItemDecoration(con, R.dimen.space);

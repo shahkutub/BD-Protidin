@@ -17,7 +17,7 @@ import android.view.WindowManager;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.kalerkantho.Fragment.CommunicatorFragmentInterface;
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Fragment.DetailsFragment;
 import com.kalerkantho.Utils.AppConstant;
 

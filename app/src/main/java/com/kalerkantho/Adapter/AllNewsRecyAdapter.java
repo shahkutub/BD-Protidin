@@ -1,4 +1,5 @@
 package com.kalerkantho.Adapter;
+
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.graphics.Typeface;
@@ -11,9 +12,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Dialog.CatListDialogFragment;
 import com.kalerkantho.Model.Category;
-import com.kalerkantho.R;
 import com.kalerkantho.Utils.AppConstant;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kalerkantho">
+    package="com.bangladesh_pratidin">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -58,7 +58,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
-            android:name=".FavrtActivity"
+            android:name="com.kalerkantho.FavrtActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
@@ -74,13 +74,13 @@
 
         <!-- for GCM end -->
 
-        <service android:name=".Gcm.MyFirebaseMessagingService">
+        <service android:name="com.kalerkantho.Gcm.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
 
-        <service android:name=".Gcm.FirebaseIDService">
+        <service android:name="com.kalerkantho.Gcm.FirebaseIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
             </intent-filter>

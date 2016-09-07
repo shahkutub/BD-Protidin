@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "496697268081",
-    "firebase_url": "https://bd-protidin-test.firebaseio.com",
-    "project_id": "bd-protidin-test",
-    "storage_bucket": "bd-protidin-test.appspot.com"
+    "project_number": "258056709474",
+    "firebase_url": "https://bd-protidin.firebaseio.com",
+    "project_id": "bd-protidin",
+    "storage_bucket": "bd-protidin.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:496697268081:android:0f5aeabcaf6d7d26",
+        "mobilesdk_app_id": "1:258056709474:android:0f5aeabcaf6d7d26",
         "android_client_info": {
           "package_name": "com.bangladesh_pratidin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "496697268081-tbuhikfhubs514tj5uiqgeu0o060e8vh.apps.googleusercontent.com",
+          "client_id": "258056709474-2jjbq7ud61b4mcl88602iok2sgjvb8n7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBO3f_eRq9qMR8L2ZaiptG56LvrN4N6hic"
+          "current_key": "AIzaSyAE3w69I5Db_VEriMjs65ueEbTBY11BFQ0"
         }
       ],
       "services": {

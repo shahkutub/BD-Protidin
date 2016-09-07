@@ -17,6 +17,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Adapter.CustomPagerAdapter;
 import com.kalerkantho.Utils.AppConstant;
 

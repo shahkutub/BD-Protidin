@@ -1,6 +1,7 @@
-package com.kalerkantho.Fragment;
+package com.kalerkantho;
 
 import android.support.v4.app.Fragment;
+
 public interface CommunicatorFragmentInterface {
 
     public void  setContentFragment(Fragment fragment, boolean addToBackStack);

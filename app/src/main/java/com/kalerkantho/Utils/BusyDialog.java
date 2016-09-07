@@ -6,7 +6,7 @@ import android.graphics.Color;
 import android.view.Window;
 import android.widget.TextView;
 
-import com.kalerkantho.R;
+import com.bangladesh_pratidin.R;
 
 
 public class BusyDialog {

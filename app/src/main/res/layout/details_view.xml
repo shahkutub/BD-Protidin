@@ -16,6 +16,8 @@
 
     </RelativeLayout>
 
+
+
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="dthjhhj"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -45,26 +47,26 @@
                 <ImageView
                     android:id="@+id/mainBackground"
                     android:layout_width="match_parent"
-                    android:layout_height="204dp"
+                    android:layout_height="@dimen/fullscreen_image_height"
                     android:background="@drawable/white_bg"
                     android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp">
-
-
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY">
                 </ImageView>
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true">
+                    android:layout_below="@+id/mainBackground"
+                    android:layout_alignLeft="@+id/mainBackground"
+                    android:background="#80000000"
+                    android:layout_alignRight="@+id/mainBackground"
+                   >
 
                     <LinearLayout
                         android:id="@+id/img_action"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"
-                        android:background="#80000000"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -239,4 +241,38 @@
                 android:visibility="gone" />
         </RelativeLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/menuListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainHeader"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:visibility="gone">
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/menuview"
+            ></include>
+    </LinearLayout>
+
+  <!--  <FrameLayout
+        android:id="@+id/containerViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+    </FrameLayout>-->
+
+<!--
+   <ProgressBar
+        android:id="@+id/bgDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>-->
+
+
+
 </RelativeLayout>

@@ -6,12 +6,12 @@
     <RelativeLayout
         android:id="@+id/mainHeader"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content">
 
         <include
             layout="@layout/header_favorite"
-            android:layout_width="fill_parent"
-            android:layout_height="50dp" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 </RelativeLayout>
 

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bangladesh_pratidin.R;
 import com.bumptech.glide.Glide;
 import com.google.gson.Gson;
 import com.kalerkantho.DetailsActivity;
@@ -19,7 +20,6 @@ import com.kalerkantho.Model.DetailsModel;
 import com.kalerkantho.Model.FvrtModel;
 import com.kalerkantho.Model.OnItemClickListenerNews;
 import com.kalerkantho.MyDb.MyDBHandler;
-import com.kalerkantho.R;
 import com.kalerkantho.holder.AllPhoto;
 
 import java.util.ArrayList;

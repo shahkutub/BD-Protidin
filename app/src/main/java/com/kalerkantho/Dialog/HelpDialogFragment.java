@@ -1,4 +1,5 @@
 package com.kalerkantho.Dialog;
+
 import android.app.DialogFragment;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -17,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.kalerkantho.R;
+import com.bangladesh_pratidin.R;
 import com.kalerkantho.Utils.AllURL;
 
 public class HelpDialogFragment extends DialogFragment {

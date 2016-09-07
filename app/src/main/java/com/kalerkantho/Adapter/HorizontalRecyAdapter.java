@@ -1,4 +1,5 @@
 package com.kalerkantho.Adapter;
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -11,10 +12,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bangladesh_pratidin.R;
 import com.bumptech.glide.Glide;
 import com.kalerkantho.DetailsActivity;
 import com.kalerkantho.Model.CommonNewsItem;
-import com.kalerkantho.R;
 
 import java.util.ArrayList;
 import java.util.List;

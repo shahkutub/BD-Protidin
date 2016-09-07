@@ -12,12 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.kalerkantho.Adapter.FavrtRecycleAdapter;
 import com.kalerkantho.Model.DetailsModel;
 import com.kalerkantho.Model.FvrtModel;
 import com.kalerkantho.MyDb.MyDBHandler;
-import com.kalerkantho.R;
 import com.kalerkantho.holder.AllNewsObj;
 
 import java.util.ArrayList;
