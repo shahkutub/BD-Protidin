@@ -108,6 +108,18 @@ public class AllURL {
 		return getcommonURLWithParamAndAction("help", temp);
 	}
 
+	public static String getCondition() {
+		final Vector<KeyValue> temp = new Vector<KeyValue>();
+		return getcommonURLWithParamAndAction("termscondition", temp);
+	}
+
+	public static String getPolicy() {
+		final Vector<KeyValue> temp = new Vector<KeyValue>();
+		return getcommonURLWithParamAndAction("ppolicy", temp);
+	}
+
+
+
 
 
 	public static String getLikeDislike(String userId,String newsId,String likeDislike,String dislikelike) {
