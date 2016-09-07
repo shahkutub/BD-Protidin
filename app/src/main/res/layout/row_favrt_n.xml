@@ -28,7 +28,7 @@
         android:id="@+id/fvrtTxtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Heading"
+        android:text=""
         android:gravity="center_vertical"
         android:maxLines="1"
         android:lines="1"
@@ -50,7 +50,7 @@
                 android:layout_below="@+id/fvrtCategory"
                 android:layout_marginLeft="5sp"
                 android:textColor="#bfc9ca"
-                android:text="Date"
+                android:text=""
                 android:textSize="10sp" />
 
 
@@ -65,7 +65,7 @@
                 android:id="@+id/fvrtCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jatio"
+                android:text=""
                 android:gravity="center_vertical"
                 android:textColor="#0089CF"
                 android:textSize="16sp" />
