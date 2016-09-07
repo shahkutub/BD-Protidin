@@ -77,13 +77,14 @@
     </RelativeLayout>
     <ImageView
         android:id="@+id/fvrtBtn"
-        android:layout_width="@dimen/dim20"
-        android:layout_height="@dimen/dim20"
+        android:layout_width="@dimen/dim30"
+        android:layout_height="@dimen/dim30"
         android:layout_alignParentRight="true"
+        android:padding="5dp"
         android:layout_alignParentTop="true"
         android:layout_marginRight="@dimen/dim07"
         android:layout_marginTop="@dimen/dim07"
-        android:src="@drawable/fav_off"
+
         />
 
 </RelativeLayout>
