@@ -9,8 +9,9 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Gravity;
@@ -27,6 +28,7 @@ import com.kalerkantho.Model.DetailsModel;
 import com.kalerkantho.Model.FvrtModel;
 import com.kalerkantho.MyDb.MyDBHandler;
 import com.kalerkantho.Utils.AppConstant;
+import com.kalerkantho.Utils.DividerItemDecoration;
 import com.kalerkantho.holder.AllNewsObj;
 
 import org.json.JSONException;
@@ -51,6 +53,8 @@ public class FavrtActivity extends AppCompatActivity {
     private TextView favHeadText;
     private Typeface face_bold;
     String news_titl = "", news_details = "", news_id = "", type = "";
+
+    private LinearLayoutManager mLayoutManager;
 //
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -92,9 +96,14 @@ public class FavrtActivity extends AppCompatActivity {
 
         favList.setHasFixedSize(true);
 
-        
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(con,2);
-        favList.setLayoutManager(layoutManager);
+        mLayoutManager = new LinearLayoutManager(con);
+        favList.setLayoutManager(mLayoutManager);
+
+        dividerDrawable = ContextCompat.getDrawable(con, R.drawable.divider);
+        RecyclerView.ItemDecoration dividerItemDecoration = new DividerItemDecoration(dividerDrawable);
+        favList.addItemDecoration(dividerItemDecoration);
+
+
 
         fAdapter  = new FavrtRecycleAdapter(FavrtActivity.this,allDetailsList,null);
         favList.setAdapter(fAdapter);
