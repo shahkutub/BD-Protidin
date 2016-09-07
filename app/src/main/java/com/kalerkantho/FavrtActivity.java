@@ -91,11 +91,15 @@ public class FavrtActivity extends AppCompatActivity {
         }
 
         favList.setHasFixedSize(true);
+
+        
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(con,2);
         favList.setLayoutManager(layoutManager);
 
         fAdapter  = new FavrtRecycleAdapter(FavrtActivity.this,allDetailsList,null);
         favList.setAdapter(fAdapter);
+
+
     }
 
     @Override
