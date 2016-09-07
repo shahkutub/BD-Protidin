@@ -21,7 +21,7 @@ import com.aapbd.utils.storage.PersistData;
 import com.bangladesh_pratidin.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
-import com.kalerkantho.Adapter.LatestRecyAdapter;
+import com.kalerkantho.Adapter.SelectedRecyAdapter;
 import com.kalerkantho.Model.CommonNewsItem;
 import com.kalerkantho.Utils.AllURL;
 import com.kalerkantho.Utils.AppConstant;
@@ -41,7 +41,7 @@ public class SelectedNewsFragment extends Fragment {
    private RecyclerView selectedNewRecList;
    private LinearLayoutManager mLayoutManager;
    private Drawable dividerDrawable;
-   private LatestRecyAdapter sAdapter;
+   private SelectedRecyAdapter sAdapter;
    private ProgressBar selectedBg;
 
     @Nullable
@@ -83,7 +83,7 @@ public class SelectedNewsFragment extends Fragment {
                 GridSpacingItemDecoration itemDecoration = new GridSpacingItemDecoration(con, R.dimen.space);
                 selectedNewRecList.addItemDecoration(itemDecoration);
 
-                sAdapter = new LatestRecyAdapter(con,selectedNews,null);
+                sAdapter = new SelectedRecyAdapter(con,selectedNews,null);
                 selectedNewRecList.setAdapter(sAdapter);
             }
 
@@ -122,7 +122,7 @@ public class SelectedNewsFragment extends Fragment {
                 @Override
                 public void run() {
                     //intiU();
-                    sAdapter = new LatestRecyAdapter(con,selectedNews,null);
+                    sAdapter = new SelectedRecyAdapter(con,selectedNews,null);
                     selectedNewRecList.setAdapter(sAdapter);
                 }
             },100);
@@ -170,7 +170,7 @@ public class SelectedNewsFragment extends Fragment {
                                 }
 
                                 if (selectedNews.size() > 0) {
-                                    sAdapter = new LatestRecyAdapter(con, selectedNews,null);
+                                    sAdapter = new SelectedRecyAdapter(con, selectedNews,null);
                                     selectedNewRecList.setAdapter(sAdapter);
                                 }
                             }

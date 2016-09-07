@@ -23,7 +23,7 @@
            android:orientation="vertical">
   <ImageView
         android:id="@+id/imag_comm"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/default_imagew"
         android:layout_height="@dimen/default_imageh"
         android:background="@drawable/defaulticon"
         android:layout_margin="1px"
