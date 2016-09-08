@@ -69,7 +69,7 @@ public class DetailsFragment extends Fragment {
     Typeface face_reg, face_bold;
     BusyDialog busyDialog;
     LinearLayout backView,menuListView,settingBtn,shareBtn,fvImg;
-    TextView titleDetails,settin,helpBtn,feedBtn;
+    TextView titleDetails,settin,helpBtn,feedBtn,tvMontobbo;
     FragmentTransaction mFragmentTransaction;
     FragmentManager mFragmentManager;
 
@@ -99,6 +99,7 @@ public class DetailsFragment extends Fragment {
         txt_positive_like = (TextView) getView().findViewById(R.id.txt_positive_like);
         txt_negative_like = (TextView) getView().findViewById(R.id.txt_negative_like);
         txt_comment = (TextView) getView().findViewById(R.id.txt_comment);
+        tvMontobbo = (TextView) getView().findViewById(R.id.tvMontobbo);
         txtDate = (TextView) getView().findViewById(R.id.dateTv);
         txtCategory = (TextView) getView().findViewById(R.id.catagoryTv);
         detailsTxt = (TextView) getView().findViewById(R.id.detailsText);
@@ -395,10 +396,13 @@ public class DetailsFragment extends Fragment {
             txt_negative_like.setText("(" + 0 + ")");
         }
 
-        if (!(TextUtils.isEmpty(allDetail.getComments_count())))
+        if (!(TextUtils.isEmpty(allDetail.getComments_count()))) {
             txt_comment.setText("(" + allDetail.getComments_count() + ")");
-        else {
+            tvMontobbo.setText("মন্তব্য" + "(" + allDetail.getComments_count() + ")");
+
+        }else {
             txt_comment.setText("(" + 0 + ")");
+            tvMontobbo.setText("মন্তব্য"+"(" + 0 + ")");
         }
 
 

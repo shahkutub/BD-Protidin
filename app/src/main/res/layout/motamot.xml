@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:padding="@dimen/dim10"
-            android:src="@drawable/back_button" />
+            android:src="@drawable/back_white_new" />
 
         <TextView
             android:id="@+id/tvComment"

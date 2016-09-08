@@ -9,7 +9,7 @@
        android:layout_width="match_parent"
        android:layout_height="0dp"
        android:layout_weight="2"
-       android:layout_marginLeft="15dp"
+
        android:gravity="center_vertical"
        android:orientation="vertical">
       <!-- <TextView
@@ -73,7 +73,7 @@
            android:background="@color/homTop"
            android:orientation="horizontal"
            android:padding="@dimen/space"
-           android:visibility="gone">
+           android:visibility="visible">
 
            <ImageView
                android:id="@+id/imgBackSetting"
@@ -111,6 +111,7 @@
            android:layout_width="match_parent"
            android:layout_height="match_parent"
            android:gravity="center_vertical"
+           android:layout_marginLeft="@dimen/dim15"
            android:orientation="vertical">
 
            <TextView

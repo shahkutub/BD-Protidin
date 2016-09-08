@@ -16,7 +16,7 @@
             android:id="@+id/backBtn"
             android:layout_margin="10dp"
             android:layout_centerVertical="true"
-            android:background="@drawable/back_button"/>
+            android:background="@drawable/back_white_new"/>
     </LinearLayout>
 
     <TextView
@@ -28,6 +28,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="5dp"
         android:textSize="20sp"
+        android:visibility="gone"
         android:layout_toRightOf="@+id/backView"/>
 
     <LinearLayout

@@ -36,6 +36,6 @@
         android:layout_alignParentTop="true"
         android:onClick="closeWindow"
         android:padding="@dimen/dim07"
-        android:src="@drawable/dellfav" />
+        android:src="@drawable/dellfav_two" />
 
 </RelativeLayout>

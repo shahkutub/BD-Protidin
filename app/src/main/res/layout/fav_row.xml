@@ -19,7 +19,7 @@
             android:layout_centerInParent="true"
             android:layout_alignParentLeft="true"
             android:padding="5dp"
-            android:src="@drawable/dellfav"/>
+            android:src="@drawable/dellfav_two"/>
 
     <TextView
         android:id="@+id/headlist"

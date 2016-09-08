@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/backBtn"
         android:layout_centerVertical="true"
-        android:background="@drawable/back_white"/>
+        android:background="@drawable/back_white_new"/>
 
 </LinearLayout>
 
