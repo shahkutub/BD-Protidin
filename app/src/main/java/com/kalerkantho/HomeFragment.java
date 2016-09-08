@@ -195,6 +195,13 @@ public class HomeFragment extends Fragment {
                                     i++;
                                 }
 
+
+                                AllCommonNewsItem redObj=new AllCommonNewsItem();
+                                redObj.setNewsCategory("bibid");
+                                redObj.setType("horizontal");
+                                redObj.setList_news_obj(allObj.getRedslider());
+                                allCommonNewsItem.add(redObj);
+
                         /*        // for bibid row
                                 AllCommonNewsItem titleObj=new AllCommonNewsItem();
                                 titleObj.setType("titleshow");
@@ -241,11 +248,11 @@ public class HomeFragment extends Fragment {
                                 // for bibid row
 
 
-                                AllCommonNewsItem redObj=new AllCommonNewsItem();
+                            /*    AllCommonNewsItem redObj=new AllCommonNewsItem();
                                 redObj.setNewsCategory("bibid");
                                 redObj.setType("horizontal");
                                 redObj.setList_news_obj(allObj.getRedslider());
-                                allCommonNewsItem.add(redObj);
+                                allCommonNewsItem.add(redObj);*/
 
 
                                 if (allCommonNewsItem.size() > 0) {

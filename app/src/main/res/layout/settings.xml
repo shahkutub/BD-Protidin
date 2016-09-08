@@ -121,7 +121,6 @@
                android:textColor="@color/kalerkontho_actionbar"
                android:textSize="14sp"
                android:textStyle="bold"
-               android:layout_marginTop="@dimen/dim07"
 
                android:text="@string/notification1"/>
            <LinearLayout

@@ -76,8 +76,8 @@
     </RelativeLayout>
     <ImageView
         android:id="@+id/fvrtBtn"
-        android:layout_width="@dimen/dim30"
-        android:layout_height="@dimen/dim30"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         android:layout_alignParentRight="true"
         android:padding="5dp"
         android:layout_alignParentTop="true"

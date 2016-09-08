@@ -69,6 +69,7 @@ public class AppConstant {
 
     public static int currentItem =0;
     public static String newsID ="";
+    public static String newsDeatailsId ="";
     public static String oneTimeCall = "oneTimeCall";
     public static boolean openPush =true;
 

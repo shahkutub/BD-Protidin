@@ -20,7 +20,7 @@
                 android:id="@+id/tvNameCom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/name"
+                android:text="মারুফ খান"
                 android:textColor="@color/homTop"
                 android:textSize="16sp" />
 
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:text="0.0"
+                android:text="১২ জুন,১২ঃ১০"
                 android:textColor="@color/black"
                 android:textSize="12sp" />
         </RelativeLayout>
@@ -40,7 +40,7 @@
             android:id="@+id/tvCommentDetails"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/comment"
+            android:text="য়ামরা শোকাহত"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:background="#F2F2F2"

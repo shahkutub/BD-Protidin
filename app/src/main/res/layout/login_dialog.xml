@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="@string/login"
+            android:layout_marginLeft="@dimen/dim10"
             android:textSize="20sp"
             android:textColor="@color/whiteMy" />
     </LinearLayout>
@@ -58,7 +59,9 @@
             android:paddingTop="@dimen/dim10"
             android:paddingLeft="@dimen/dim20"
             android:singleLine="true"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            />
 
         <EditText
             android:id="@+id/etEmailLogin"

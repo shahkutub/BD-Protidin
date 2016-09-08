@@ -23,6 +23,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.aapbd.utils.network.AAPBDHttpClient;
@@ -69,9 +70,10 @@ public class DetailsFragment extends Fragment {
     Typeface face_reg, face_bold;
     BusyDialog busyDialog;
     LinearLayout backView,menuListView,settingBtn,shareBtn,fvImg;
-    TextView titleDetails,settin,helpBtn,feedBtn,tvMontobbo;
+    TextView titleDetails,settin,helpBtn,feedBtn,tvMontobbo,tvPhotoTitle;
     FragmentTransaction mFragmentTransaction;
     FragmentManager mFragmentManager;
+    private RelativeLayout transView;
 
     public CommunicatorFragmentInterface myCommunicator;
 
@@ -112,11 +114,13 @@ public class DetailsFragment extends Fragment {
         helpBtn = (TextView) getView().findViewById(R.id.helpBtn);
         feedBtn = (TextView) getView().findViewById(R.id.feedBtn);
         favImage = (ImageView) getView().findViewById(R.id.favImage);
+        tvPhotoTitle = (TextView) getView().findViewById(R.id.tvPhotoTitle);
 
         backView = (LinearLayout) getView().findViewById(R.id.backView);
         menuListView = (LinearLayout) getView().findViewById(R.id.menuListView);
         progressShow = (ProgressBar) getView().findViewById(R.id.progressShow);
         myCommunicator = (CommunicatorFragmentInterface) con;
+        transView = (RelativeLayout) getView().findViewById(R.id.transView);
 
         positive_like = (ImageView) getView().findViewById(R.id.positive_like);
         dislikeBtn = (ImageView) getView().findViewById(R.id.dislikeBtn);
@@ -129,6 +133,8 @@ public class DetailsFragment extends Fragment {
 
         face_reg = Typeface.createFromAsset(con.getAssets(), "fonts/SolaimanLipi_reg.ttf");
         face_bold = Typeface.createFromAsset(con.getAssets(), "fonts/SolaimanLipi_Bold.ttf");
+
+      //  transView.setAlpha(0.25f);
 
         titleDetails.setTypeface(face_bold);
         settin.setTypeface(face_reg);
@@ -374,6 +380,7 @@ public class DetailsFragment extends Fragment {
 
     private void setAllData(boolean imageload) {
 
+        //headingTxt.setText(allDetail.getNews().getTitle());
         headingTxt.setText(allDetail.getNews().getTitle());
         detailsTxt.setText(Html.fromHtml(allDetail.getNews().getDetails()));
 
@@ -489,6 +496,8 @@ public class DetailsFragment extends Fragment {
                             if (!TextUtils.isEmpty(new String(response))) {
                                 Gson g = new Gson();
                                 allDetail = g.fromJson(new String(response), DetailsModel.class);
+
+                                AppConstant.newsID = allDetail.getNews().getId();
 
                                 setAllData(true);
                             }

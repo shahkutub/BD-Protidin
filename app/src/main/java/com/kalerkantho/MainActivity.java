@@ -202,7 +202,7 @@ public class MainActivity extends AppCompatActivity {
                 + ":" + c.get(Calendar.MINUTE);
         tvDate.setText(sDate);
 
-        tvDate.setText(getBanglaDay(dayOfTheWeek) + " " + AppConstant.getDigitBanglaFromEnglish(String.valueOf(c.get(Calendar.DAY_OF_MONTH))) + " " + getBanglaMonth(String.valueOf(c.get(Calendar.MONTH))) + AppConstant.getDigitBanglaFromEnglish(String.valueOf(c.get(Calendar.YEAR))));
+        tvDate.setText(getBanglaDay(dayOfTheWeek) + " " + AppConstant.getDigitBanglaFromEnglish(String.valueOf(c.get(Calendar.DAY_OF_MONTH))) + " " + getBanglaMonth(String.valueOf(c.get(Calendar.MONTH))) + "," +  AppConstant.getDigitBanglaFromEnglish(String.valueOf(c.get(Calendar.YEAR))));
 
         /**
          * Lets inflate the very first fragment

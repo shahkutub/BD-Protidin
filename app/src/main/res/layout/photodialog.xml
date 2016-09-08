@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
+        android:padding="5dp"
         android:layout_marginRight="@dimen/dim07"
         android:src="@drawable/forward_icon" />
 
