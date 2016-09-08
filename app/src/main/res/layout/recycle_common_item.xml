@@ -54,24 +54,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             >
-
             <TextView
                 android:id="@+id/comDateTime"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:layout_marginRight="8dp"
                 android:gravity="center"
                 android:text=""
                 android:textColor="#9E9E9E"
                 android:textSize="12sp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:gravity="center"
-                android:text="time here"
-                android:visibility="gone" />
+
             <View
                 android:id="@+id/divderView"
                 android:layout_width="5px"
@@ -83,8 +78,9 @@
 
             <TextView
                 android:id="@+id/common_cat"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:text=""
                 android:textColor="#00A750"
                 android:textSize="12sp" />
